@@ -44,9 +44,9 @@ def rename_files_in_directory(directory, include_track, include_title, include_a
                 # 根据用户选择的选项构建文件名
                 new_filename = ""
                 if include_track:
-                    new_filename += f"{track_num.zfill(2)} - "
+                    new_filename += f"{track_num.zfill(2)}"
                 if include_title:
-                    new_filename += f"{title}"
+                    new_filename += f" - {title}"
                 if include_artist:
                     new_filename += f" - {artist}"
 
